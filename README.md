@@ -99,9 +99,9 @@ A complete enterprise network simulation built in Cisco Packet Tracer covering V
 All the following were verified and working:
 
 ```
-PC1 (VLAN10) ping PC2 (VLAN20)  ✓  inter-VLAN routing on SW1
-PC1 (VLAN10) ping PC3 (VLAN30)  ✓  full path across OSPF network
-PC1 (VLAN10) ping PC4 (VLAN40)  ✓  full path across OSPF network
+PC0 (VLAN10) ping PC2 (VLAN20)  ✓  inter-VLAN routing on SW1
+PC0 (VLAN10) ping PC4 (VLAN30)  ✓  full path across OSPF network
+PC0 (VLAN10) ping PC7 (VLAN40)  ✓  full path across OSPF network
 show ip ospf neighbor            ✓  all neighbors in FULL state
 show ip route                   ✓  all networks visible via OSPF (O)
 ```
