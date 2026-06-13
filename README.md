@@ -5,38 +5,16 @@ A complete enterprise network simulation built in Cisco Packet Tracer covering V
 
 ---
 
-## Network Topology
-
-```
-                        [R1 - Core/OSPF]
-                       /                \
-                Se0/0/0                Se0/0/1
-               /                              \
-           [R2]                              [R3]
-          Fa0/0                              Fa0/0
-            |                                  |
-     [SW1 - Distribution]            [SW2 - Distribution]
-      /            \                   /             \
-  [SW3]           [SW4]           [SW5]            [SW6]
-  Access          Access          Access           Access
-    |               |               |                |
-  [PC1]           [PC2]           [PC3]            [PC4]
-  VLAN10          VLAN20          VLAN30           VLAN40
-  HR              IT              Sales            Finance
-```
-
----
-
 ## IP Addressing Table
 
 | Device | Interface | IP Address | Subnet Mask |
 |---|---|---|---|
-| R1 | Se0/0/0 | 10.0.0.1 | 255.255.255.252 |
-| R1 | Se0/0/1 | 10.0.0.5 | 255.255.255.252 |
+| R1 | Se0/1/0 | 10.0.0.1 | 255.255.255.252 |
+| R1 | Se0/1/1 | 10.0.0.5 | 255.255.255.252 |
 | R2 | Se0/0/0 | 10.0.0.2 | 255.255.255.252 |
-| R2 | Fa0/0 | 172.16.1.1 | 255.255.255.252 |
-| R3 | Se0/0/0 | 10.0.0.6 | 255.255.255.252 |
-| R3 | Fa0/0 | 172.16.2.1 | 255.255.255.252 |
+| R2 | Gig0/0 | 172.16.1.1 | 255.255.255.252 |
+| R3 | Se0/1/0 | 10.0.0.6 | 255.255.255.252 |
+| R3 | Gig0/0 | 172.16.2.1 | 255.255.255.252 |
 | SW1 | Fa0/24 (routed) | 172.16.1.2 | 255.255.255.252 |
 | SW1 | VLAN 10 SVI | 192.168.10.1 | 255.255.255.0 |
 | SW1 | VLAN 20 SVI | 192.168.20.1 | 255.255.255.0 |
@@ -65,7 +43,7 @@ A complete enterprise network simulation built in Cisco Packet Tracer covering V
 
 | Device | Model | Role | Layer |
 |---|---|---|---|
-| R1, R2, R3 | Cisco 2811 | Routing / WAN | Layer 3 |
+| R1, R2, R3 | Cisco 2911 | Routing / WAN | Layer 3 |
 | SW1, SW2 | Cisco 3560-24PS | Distribution | Layer 3 |
 | SW3, SW4, SW5, SW6 | Cisco 2960-24TT | Access | Layer 2 |
 | PC0–PC7 | Generic PC | End devices | — |
