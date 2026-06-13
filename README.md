@@ -43,10 +43,10 @@ A complete enterprise network simulation built in Cisco Packet Tracer covering V
 | SW2 | Fa0/24 (routed) | 172.16.2.2 | 255.255.255.252 |
 | SW2 | VLAN 30 SVI | 192.168.30.1 | 255.255.255.0 |
 | SW2 | VLAN 40 SVI | 192.168.40.1 | 255.255.255.0 |
-| PC1 | NIC | 192.168.10.10 | 255.255.255.0 |
+| PC0 | NIC | 192.168.10.10 | 255.255.255.0 |
 | PC2 | NIC | 192.168.20.10 | 255.255.255.0 |
-| PC3 | NIC | 192.168.30.10 | 255.255.255.0 |
-| PC4 | NIC | 192.168.40.10 | 255.255.255.0 |
+| PC4 | NIC | 192.168.30.10 | 255.255.255.0 |
+| PC7 | NIC | 192.168.40.20 | 255.255.255.0 |
 
 ---
 
@@ -68,7 +68,7 @@ A complete enterprise network simulation built in Cisco Packet Tracer covering V
 | R1, R2, R3 | Cisco 2811 | Routing / WAN | Layer 3 |
 | SW1, SW2 | Cisco 3560-24PS | Distribution | Layer 3 |
 | SW3, SW4, SW5, SW6 | Cisco 2960-24TT | Access | Layer 2 |
-| PC1–PC4 | Generic PC | End devices | — |
+| PC0–PC7 | Generic PC | End devices | — |
 
 ---
 
